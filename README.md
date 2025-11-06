@@ -4,10 +4,11 @@
 
 # Projekti ajakava
 
-Esimene Päev
+### Esimene Päev
 
+- Mõtlesime välja lehe kujunduse.
 - Alustasime lehe kujundust Figma keskkonnas.
 
-Teine Päev
+### Teine Päev
 
-Kolmas Päev
+### Kolmas Päev
