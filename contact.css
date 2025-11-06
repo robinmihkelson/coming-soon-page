@@ -1,0 +1,53 @@
+header.header {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    color: white;
+}
+
+nav.navbar {
+    flex-grow: 1;
+}
+
+nav.navbar ul.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav.navbar ul.nav-links li {
+    margin-left: 20px;
+} 
+
+div.formcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 550px;
+    margin-right: 550px;
+    margin-top: 150px;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #062970;
+    color: white;
+    opacity: 0.8;
+}
+
+form.contactform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+}
+
+body { 
+    background: url(images/construction-esimene.jpg) no-repeat center fixed;
+}
