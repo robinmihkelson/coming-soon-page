@@ -1,7 +1,5 @@
 # Construction web app Coming Soon Page
 
-# Liikmed
-
 # Projekti ajakava
 
 ### Esimene Päev
