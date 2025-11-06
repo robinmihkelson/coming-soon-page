@@ -1,0 +1,68 @@
+     //code for countdown timer
+     
+     const launchDate = new Date("2025-12-31T00:00:00").getTime();
+
+      const timer = setInterval(function () {
+        const now = new Date().getTime();
+        const distance = launchDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor(
+          (distance % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown").innerHTML =
+          days +
+          "d " +
+          hours +
+          "h " +
+          minutes +
+          "m " +
+          seconds +
+          "s ";
+
+        if (distance < 0) {
+          clearInterval(timer);
+          document.getElementById("countdown").innerHTML = "Launched!";
+        }
+      }, 1000);
+
+//hover + shadow animation
+<script>
+const hoverElements = document.querySelectorAll('.pageaim .paragraph-text');
+
+hoverElements.forEach(el => {
+  let animationFrame;
+  let position = 0;
+  let direction = 1;
+  const amplitude = 10; // max vertical movement
+  const speed = 0.3; // float speed
+
+  function animateHover() {
+    position += speed * direction;
+    if (position > amplitude || position < -amplitude) direction *= -1;
+
+    // Move element up/down
+    el.style.transform = `translateY(${position}px)`;
+
+    // Add shadow that moves slightly with the text
+    el.style.textShadow = `${position / 2}px ${position / 2}px 10px rgba(0,0,0,0.3)`;
+
+    animationFrame = requestAnimationFrame(animateHover);
+  }
+
+  el.addEventListener('mouseenter', () => {
+    animateHover();
+  });
+
+  el.addEventListener('mouseleave', () => {
+    cancelAnimationFrame(animationFrame);
+    el.style.transform = 'translateY(0)';
+    el.style.textShadow = 'none';
+  });
+});
+</script>
