@@ -86,7 +86,7 @@ body {
   line-height: 1.4;
   color: rgba(0,172,193,1);
   max-width: 900px;
-  margin: 150px auto 15px auto; /* added top margin for breathing space */
+  margin: 150px auto 15px auto;
   opacity: 0.97;
   font-weight: 600;
 }
@@ -96,7 +96,7 @@ body {
   line-height: 1.6;
   color: #555;
   max-width: 850px;
-  margin: 25px auto 0 auto; /* subtle top margin to separate from text above */
+  margin: 25px auto 0 auto;
   opacity: 0.9;
   font-weight: 500;
 }
