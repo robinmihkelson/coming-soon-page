@@ -7,7 +7,7 @@
 
 # Liikmed
 
-- Robin Mihkelson, TAK-24
+- Robin Mihkelson, TAK-23
 - Hugo pool, TA-25
 - Marius Kendra, TAK-24
 - Urve Nõgu, TA-25
