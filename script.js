@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             pageAim.classList.add("show");
-            observer.unobserve(pageAim); // triggers only once
+            observer.unobserve(pageAim);
           }
         });
       },
-      { threshold: 0.2 } // triggers when 20% visible
+      { threshold: 0.2 }
     );
 
     observer.observe(pageAim);
