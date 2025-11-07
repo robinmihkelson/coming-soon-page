@@ -85,6 +85,15 @@ body {
   opacity: 0.95;
 }
 
+.pageaim img {
+  display: block;
+  margin: 50px auto 0 auto; /* centers image + adds top space */
+  width: 60%; /* adjust size (you can use 40–70% depending on look) */
+  max-width: 700px; /* keeps it from getting too large on big screens */
+  border-radius: 25px; /* rounded corners */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
 /* Fade-in + slide-up animation */
 @keyframes fadeInUp {
   from {
@@ -165,6 +174,15 @@ body {
   h1 {
     font-size:24px;
   }
+
+  .pageaim img {
+  display: block;
+  margin: 50px auto 0 auto; /* centers image + adds top space */
+  width: 60%; /* adjust size (you can use 40–70% depending on look) */
+  max-width: 700px; /* keeps it from getting too large on big screens */
+  border-radius: 25px; /* rounded corners */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
 }
 
 .goals {
