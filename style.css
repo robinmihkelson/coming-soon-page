@@ -50,26 +50,24 @@ body {
   max-height:150px;
 }
 
-/* Pageaim Section */
 .pageaim {
   background-color: #ffffff;
   text-align: center;
   padding: 150px 20px;
   color: #333;
-  margin-top: 200px; /* pushes section below initial view on 1080p */
+  margin-top: 200px;
   opacity: 0;
   transform: translateY(60px);
   transition: all 0.8s ease-out;
 }
 
-/* Visible when scrolled into view */
 .pageaim.show {
   opacity: 1;
   transform: translateY(0);
 }
 
 .pageaim h2 {
-  font-size: 70px;
+  font-size: 55px;
   color: rgba(0,172,193,1);
   margin-bottom: 25px;
   font-weight: 700;
@@ -85,16 +83,35 @@ body {
   opacity: 0.95;
 }
 
+.pageaim h1 {
+  font-size: 55px;
+  line-height: 1.4;
+  color: rgba(0,172,193,1);
+  max-width: 900px;
+  margin: 150px auto 15px auto; /* added top margin for breathing space */
+  opacity: 0.97;
+  font-weight: 600;
+}
+
+.pageaim h3 {
+  font-size: 32px;
+  line-height: 1.6;
+  color: #555;
+  max-width: 850px;
+  margin: 25px auto 0 auto; /* subtle top margin to separate from text above */
+  opacity: 0.9;
+  font-weight: 500;
+}
+
 .pageaim img {
   display: block;
-  margin: 50px auto 0 auto; /* centers image + adds top space */
-  width: 60%; /* adjust size (you can use 40–70% depending on look) */
-  max-width: 700px; /* keeps it from getting too large on big screens */
-  border-radius: 25px; /* rounded corners */
+  margin: 50px auto 0 auto;
+  width: 60%;
+  max-width: 700px;
+  border-radius: 25px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* Fade-in + slide-up animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -177,10 +194,10 @@ body {
 
   .pageaim img {
   display: block;
-  margin: 50px auto 0 auto; /* centers image + adds top space */
-  width: 60%; /* adjust size (you can use 40–70% depending on look) */
-  max-width: 700px; /* keeps it from getting too large on big screens */
-  border-radius: 25px; /* rounded corners */
+  margin: 50px auto 0 auto;
+  width: 60%;
+  max-width: 700px;
+  border-radius: 25px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 }
@@ -231,7 +248,6 @@ body {
   line-height: 1.6;
 }
 
-/* Scroll reveal animation */
 .goal-card.show {
   opacity: 1;
   transform: translateY(0);
@@ -253,14 +269,13 @@ body {
   opacity: 0.95;
 }
 
-/* Hover animation */
+
 .goal-card:hover .goal-img {
   transform: scale(1.1) rotate(3deg);
   opacity: 1;
   box-shadow: 0 6px 25px rgba(0,172,193,0.6);
 }
 
-/* Scroll reveal for image */
 .goal-card.show .goal-img {
   animation: fadeInUp 0.8s ease forwards;
 }
@@ -276,7 +291,6 @@ body {
   overflow: hidden;
 }
 
-/* Animated floating background elements */
 .contact-bg::before,
 .contact-bg::after {
   content: "";
@@ -307,7 +321,7 @@ body {
   50% { transform: translateY(30px) rotate(10deg); }
 }
 
-/* Glassmorphic form box */
+
 .contact-box {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(20px);
@@ -331,7 +345,6 @@ body {
   font-weight: 700;
 }
 
-/* Inputs */
 .contact-form-bg {
   display: flex;
   flex-direction: column;
@@ -361,7 +374,6 @@ body {
   box-shadow: 0 0 0 2px rgba(0,172,193,0.5);
 }
 
-/* Button */
 .submit-btn {
   background: linear-gradient(90deg, rgba(0,172,193,1), rgba(84,58,183,1));
   color: white;
@@ -382,7 +394,6 @@ body {
   box-shadow: 0 6px 25px rgba(0,172,193,0.5);
 }
 
-/* Animation reused */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -394,7 +405,6 @@ body {
   }
 }
 
-/* Responsive */
 @media (max-width: 500px) {
   .contact-box {
     padding: 40px 30px;
